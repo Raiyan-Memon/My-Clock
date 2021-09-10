@@ -1,51 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>   
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Raiyan's clock</title>
-
-    <style>
-        body {
-            background: black;
-        }
-    .container{
-        color : white;
-        background : blue;
-        border : 2px solid white;
-        position: absolute;
-        margin: 20% 35%;      
-        transition: all 0.4s ease-in 0s;
-    }
-    .container:hover{
-        background: red;
-        color: black;
-        transition: all 0.4s ease-in 0s;
-    }
-    
-    </style>
-
-    <script>
-    
-  
-        setInterval (() => {
-            a=new Date();
-        let time = a.getHours() + ":" + a.getMinutes() + ":"+ a.getSeconds();
-        let date = a.toLocaleDateString();
-        document.getElementById('time').innerHTML = time;
-        document.getElementById('date').innerHTML = date;
-      
-        }, 1000);
-
-    </script>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
-    <h1>Raiyan's clock</h1>
+        <h1>Raiyan's clock</h1>
 
-    <h2 id="Demo">Current Time  is : <span id="time"></span></h2>
-    <h2 id="demo">Today's Date is : <span id="date"></span></h2>
-</div>
+        <h2 id="Demo">Current Time is : <span id="time"></span></h2>
+        <h2 id="demo">Today's Date is : <span id="date"></span></h2>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
